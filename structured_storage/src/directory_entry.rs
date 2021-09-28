@@ -20,7 +20,7 @@ enum ColorFlag = {
 }
 
 struct DirectoryEntry {
-  entry_name: String, // cannot contain /\:! 64 bit, utf-16 (32 characters in case I forget)
+  entry_name: [u8, 64], // cannot contain /\:! 64 bit, utf-16 (32 characters in case I forget)
   entry_name_length: [u8; 2],
   object_type: ObjectType,
   color_flag: ColorFlag,
