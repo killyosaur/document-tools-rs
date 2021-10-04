@@ -1,7 +1,7 @@
 // Compound File Directory Entry
 // regular stream id = 0x00000000 - 0xfffffff9
-let max_reg_stream_id: [u8; 4] = [0xff; 0xff; 0xff; 0xfa];
-let no_stream: [u8; 4] = [0xff; 0xff; 0xff; 0xff];
+let max_reg_stream_id: [u8; 4] = [0xff, 0xff, 0xff, 0xfa];
+let no_stream: [u8; 4] = [0xff; 4];
 
 // directory entry size is fixed a 128 bytes. Name limited to 32 UTF-16 code points including null terminator
 // v3 groups 4 entries per sector
